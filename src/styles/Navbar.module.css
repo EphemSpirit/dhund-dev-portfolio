@@ -21,3 +21,8 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.hero-bg {
+    position: fixed;
+    top: 0;
+}

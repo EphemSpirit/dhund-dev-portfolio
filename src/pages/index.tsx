@@ -1,7 +1,25 @@
-import Head from 'next/head'
-import Navbar from '../../components/Navbar'
+import { useState, useEffect } from "react";
+import { Box } from "@chakra-ui/react";
+import Head from "next/head";
+import Navbar from "../../components/Navbar";
+import Footer from '../../components/Footer';
+import Logo from "../../components/Logo";
 
 export default function Home() {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    const updateMobile = () => {
+      setMobile(window.innerWidth < 768 ? true : false);
+    };
+
+    updateMobile();
+    window.addEventListener("resize", updateMobile);
+
+    return () => {
+      window.removeEventListener("resize", updateMobile);
+    };
+  });
   return (
     <>
       <Head>
@@ -12,7 +30,14 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
+        {/* {!mobile && <Navbar />}
+        {mobile && <Logo mobile={mobile} />} */}
+        <Box h="100vh" bg="brand.mainBg"></Box>
+        {mobile && (
+
+          <Footer />
+        )}
       </main>
     </>
-  )
+  );
 }
