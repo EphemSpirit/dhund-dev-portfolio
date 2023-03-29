@@ -1,7 +1,7 @@
 .navbar-item {
     display: inline-block;
     position: relative;
-    color: #DEC102
+    color: #DEC102;
 }
 
 .navbar-item::after {
@@ -20,4 +20,9 @@
 .navbar-item:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.hero-bg {
+    position: fixed;
+    top: 0;
 }
