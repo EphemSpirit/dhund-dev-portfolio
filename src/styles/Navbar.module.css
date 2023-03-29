@@ -1,7 +1,7 @@
 .navbar-item {
     display: inline-block;
     position: relative;
-    color: #DEC102
+    color: #DEC102;
 }
 
 .navbar-item::after {

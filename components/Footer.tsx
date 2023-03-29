@@ -10,14 +10,14 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
         <Flex>
-          <Text color="brand.headers">
+          <Text color="brand.headers" mr={2}>
             <Link href="https://github.com/EphemSpirit" target="_blank">
               <IconContext.Provider value={{ size: "1.5em" }}>
                 <BsGithub />
               </IconContext.Provider>
             </Link>
           </Text>
-          <Text color="brand.headers">
+          <Text color="brand.headers" ml={2}>
             <Link
               href="https://linkedin.com/in/drew-j-hund-9163b289"
               target="_blank"

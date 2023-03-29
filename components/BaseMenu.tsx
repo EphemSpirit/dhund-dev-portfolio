@@ -9,16 +9,16 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 const BaseMenu = () => {
   return (
     <Flex w="30%" justify="space-between">
-      <Text className={styles["navbar-item"]} color="brand.headers">
+      <Text className={styles["navbar-item"]}>
         About Me
       </Text>
-      <Text className={styles["navbar-item"]} color="brand.headers">
+      <Text className={styles["navbar-item"]}>
         Experience
       </Text>
-      <Text className={styles["navbar-item"]} color="brand.headers">
+      <Text className={styles["navbar-item"]}>
         My Work
       </Text>
-      <Text mr={8} className={styles["navbar-item"]} color="brand.headers">
+      <Text mr={8} className={styles["navbar-item"]}>
         Resume
       </Text>
       <Text color="brand.headers">

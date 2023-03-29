@@ -22,7 +22,6 @@ const Navbar = () => {
 
   return (
     <Flex
-      className={styles["hero-bg"]}
       px={12}
       align="center"
       h="75"
@@ -31,7 +30,6 @@ const Navbar = () => {
       bg="linear-gradient(180deg, rgba(20,19,41,1) 0%, rgba(72,72,58,1) 100%);"
     >
       <Text
-        color="brand.headers"
         className={styles["navbar-item"]}
         fontSize="3xl"
       >
