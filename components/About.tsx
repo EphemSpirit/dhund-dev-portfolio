@@ -1,9 +1,13 @@
-import { Divider, Flex, Text, Slide, Spacer } from "@chakra-ui/react";
+import { Divider, Flex, Text, Spacer, ScaleFade } from "@chakra-ui/react";
 import styles from "./About.module.css";
 
-const About = () => {
+interface ComponentProps {
+  mobile: boolean
+}
+
+const About = ({ mobile }: ComponentProps) => {
   return (
-    <Slide direction="bottom" in={true}>
+    <ScaleFade initialScale={0.9} in={true}>
       <Flex w="100%" justify="center">
         <Flex w="50%" direction="column" justify="center" mb={36}>
           <div id="aboutMe">
@@ -31,7 +35,7 @@ const About = () => {
             consectetur purus. Curabitur porta, odio ac.
           </Text>
           <Text color="brand.headers" mb={4}>Technologies I work with:</Text>
-          <Flex ml={24} w="25%" justify="center" color="brand.headers">
+          <Flex direction={mobile ? "column" : "row"} ml={mobile ? 0 : 24} w={mobile ? "100%" : "25%"} justify="center" color="brand.headers">
             <Flex direction="column" mr={4}>
               <ul>TypeScript/JavaScript</ul>
               <ul>Ruby on Rails</ul>
@@ -46,7 +50,7 @@ const About = () => {
           </Flex>
         </Flex>
       </Flex>
-    </Slide>
+    </ScaleFade>
   );
 };
 

@@ -32,8 +32,8 @@ export default function Home() {
         <Navbar />
         {/* {!mobile && <Navbar />}
         {mobile && <Logo mobile={mobile} />} */}
-        <Box h="100vh" bg="brand.mainBg">
-          <About />
+        <Box h="100vh" bg="brand.mainBg" style={{ overflow: "scroll" }}>
+          <About mobile={mobile} />
         </Box>
         {mobile && (
 
