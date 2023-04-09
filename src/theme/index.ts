@@ -9,7 +9,7 @@ export const theme = extendTheme({
   ...config,
   colors: {
     brand: {
-      bodyText: "#A0030B",
+      bodyText: "#F00511",
       mainBg: "#48483A",
       secondaryBg: "#5C574F",
       headers: "#DEC102",
