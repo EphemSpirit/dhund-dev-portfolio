@@ -17,8 +17,8 @@ const About = ({ mobile }: ComponentProps) => {
           </div>
           <Divider />
           <Text color="brand.headers" mt={4} mb={4}>
-            I'm Drew! A web developer with about 2 years of professional
-            experience building client-facing solutions. But I wasn't always
+            I&apos;m Drew! A web developer with about 2 years of professional
+            experience building client-facing solutions. But I wasn&apos;t always
             what I am now! The currents of time brought me down a winding path
             before I found my love for code and building with it. I first toyed
             with making websites with Dreamweaver in high school, but a
@@ -27,8 +27,8 @@ const About = ({ mobile }: ComponentProps) => {
             how sentences are constructed, how conversations flow, etc - enabled
             me to look at computer language in the same way when a waning tide
             brought me back to that shore. I view every component or feature I
-            build to be part of the larger conversation of the app itself. I'd
-            love to collaborate in your app's conversation if you think we'd be
+            build to be part of the larger conversation of the app itself. I&apos;d
+            love to collaborate in your app&apos;s conversation if you think we&apos;d be
             a good fit!
           </Text>
           <Text color="brand.subBodyText" mb={4}>
