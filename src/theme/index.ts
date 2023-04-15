@@ -13,7 +13,8 @@ export const theme = extendTheme({
       mainBg: "#48483A",
       secondaryBg: "#5C574F",
       headers: "#DEC102",
-      subtitles: "#C5D1EB"
+      subtitles: "#C5D1EB",
+      subBodyText: "#f9850b"
     }
   },
   fonts: {

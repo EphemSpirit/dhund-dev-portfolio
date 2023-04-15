@@ -2,7 +2,7 @@ import { Divider, Flex, Text, Spacer, ScaleFade } from "@chakra-ui/react";
 import styles from "./About.module.css";
 
 interface ComponentProps {
-  mobile: boolean
+  mobile: boolean;
 }
 
 const About = ({ mobile }: ComponentProps) => {
@@ -17,35 +17,54 @@ const About = ({ mobile }: ComponentProps) => {
           </div>
           <Divider />
           <Text color="brand.headers" mt={4} mb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            viverra volutpat turpis eget accumsan. Maecenas vehicula, nunc quis
-            egestas bibendum, ligula sapien malesuada dolor, vitae faucibus
-            turpis augue sit amet felis. Morbi nec orci vestibulum, convallis mi
-            sed, faucibus orci. Mauris et purus gravida, aliquam sapien nec,
-            fringilla neque. Sed tempor, velit vitae malesuada lacinia, sem
-            lacus rutrum nunc, a sagittis velit elit nec ex. Quisque iaculis
-            fringilla lacus sed dapibus. Duis convallis convallis est, rutrum
-            posuere justo bibendum condimentum. Nam tempor enim ac lorem
-            interdum, vel feugiat erat malesuada. Aliquam erat volutpat. Duis
-            ullamcorper bibendum eros, eget mollis felis dignissim nec.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Ut porta, eros pharetra dapibus feugiat,
-            velit leo feugiat lacus, sit amet dapibus sem nisi id purus. Nullam
-            blandit metus sed est semper, id maximus lacus semper. Quisque non
-            consectetur purus. Curabitur porta, odio ac.
+            I'm Drew! A web developer with about 2 years of professional
+            experience building client-facing solutions. But I wasn't always
+            what I am now! The currents of time brought me down a winding path
+            before I found my love for code and building with it. I first toyed
+            with making websites with Dreamweaver in high school, but a
+            burdgeoning love of language lead to me to study linguistics in
+            college. Though it may seem unrelated, learning how language works -
+            how sentences are constructed, how conversations flow, etc - enabled
+            me to look at computer language in the same way when a waning tide
+            brought me back to that shore. I view every component or feature I
+            build to be part of the larger conversation of the app itself. I'd
+            love to collaborate in your app's conversation if you think we'd be
+            a good fit!
           </Text>
-          <Text color="brand.headers" mb={4}>Technologies I work with:</Text>
-          <Flex direction={mobile ? "column" : "row"} ml={mobile ? 0 : 24} w={mobile ? "100%" : "25%"} justify="center" color="brand.headers">
-            <Flex direction="column" mr={4}>
-              <ul>TypeScript/JavaScript</ul>
-              <ul>Ruby on Rails</ul>
-              <ul>Ruby</ul>
+          <Text color="brand.subBodyText" mb={4}>
+            Technologies I work with:
+          </Text>
+          <Flex
+            sx={{ fontStyle: "italic" }}
+            direction={mobile ? "column" : "row"}
+            ml={mobile ? 0 : 24}
+            w={mobile ? "100%" : "50%"}
+            justify="center"
+            align="center"
+            color="brand.headers"
+          >
+            <Flex direction="column" mr={4} ml={mobile ? "70px" : ""}>
+              <ul>
+                <li>TypeScript/Javascript</li>
+                <li>Ruby on Rails</li>
+                <li>Ruby</li>
+              </ul>
             </Flex>
             <Spacer />
-            <Flex direction="column">
-              <ul>NextJS/React</ul>
-              <ul>Tailwind</ul>
-              <ul>Bootstrap</ul>
+            <Flex direction="column" pl={mobile ? "" : "20px"}>
+              <ul>
+                <li>NextJS/React</li>
+                <li>Tailwind</li>
+                <li>Bootstrap</li>
+              </ul>
+            </Flex>
+            <Spacer />
+            <Flex direction="column" pl={mobile ? "" : "40px"}>
+              <ul>
+                <li>Node/Express</li>
+                <li>HTML5/CSS3</li>
+                <li>PostgreSQL</li>
+              </ul>
             </Flex>
           </Flex>
         </Flex>

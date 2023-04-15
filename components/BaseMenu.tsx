@@ -11,11 +11,17 @@ const BaseMenu = () => {
       <Link href="#aboutMe">
         <Text className={styles["navbar-item"]}>About Me</Text>
       </Link>
-      <Text className={styles["navbar-item"]}>Experience</Text>
-      <Text className={styles["navbar-item"]}>My Work</Text>
-      <Text mr={8} className={styles["navbar-item"]}>
-        Resume
-      </Text>
+      <Link href="#">
+        <Text className={styles["navbar-item"]}>Experience</Text>
+      </Link>
+      <Link href="#">
+        <Text className={styles["navbar-item"]}>My Work</Text>
+      </Link>
+      <Link href="#">
+        <Text mr={8} className={styles["navbar-item"]}>
+          Resume
+        </Text>
+      </Link>
       <Text color="brand.headers">
         <Link href="https://github.com/EphemSpirit" target="_blank">
           <IconContext.Provider value={{ size: "1.5em" }}>
