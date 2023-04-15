@@ -9,11 +9,12 @@ export const theme = extendTheme({
   ...config,
   colors: {
     brand: {
-      bodyText: "#A0030B",
+      bodyText: "#F00511",
       mainBg: "#48483A",
       secondaryBg: "#5C574F",
       headers: "#DEC102",
-      subtitles: "#C5D1EB"
+      subtitles: "#C5D1EB",
+      subBodyText: "#f9850b"
     }
   },
   fonts: {
