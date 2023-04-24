@@ -8,7 +8,7 @@ interface ComponentProps {
 const About = ({ mobile }: ComponentProps) => {
   return (
     <ScaleFade initialScale={0.9} in={true}>
-      <Flex w="100%" justify="center">
+      <Flex w="100%" justify="center" mt={24}>
         <Flex w="50%" direction="column" justify="center" mb={36}>
           <div id="aboutMe">
             <Text color="brand.bodyText" fontSize="2em" mb={4} w="100%">
