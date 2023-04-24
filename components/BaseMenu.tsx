@@ -4,8 +4,12 @@ import styles from "../src/styles/Navbar.module.css";
 import { IconContext } from "react-icons";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
+// import devResume from "/assets/hund.drew-resume_dev.pdf";
 
 const BaseMenu = () => {
+  const openResume = () => {
+    window.open('../src/assets/hund.drew-resume_dev.pdf')
+  };
   return (
     <Flex w="30%" justify="space-between">
       <Link href="#aboutMe">
@@ -17,7 +21,7 @@ const BaseMenu = () => {
       <Link href="#">
         <Text className={styles["navbar-item"]}>My Work</Text>
       </Link>
-      <Link href="#">
+      <Link href="/assets/hund.drew-resume_dev.pdf" target="_blank">
         <Text mr={8} className={styles["navbar-item"]}>
           Resume
         </Text>
