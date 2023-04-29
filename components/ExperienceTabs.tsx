@@ -36,7 +36,7 @@ const ExperienceTabs = () => {
             assignment between priority queues and help streamline task
             assignment/prioritization more generally. I also used my then
             burdgeoning knowledge of HTML5/CSS3 to help design a website for my
-            team's page on Amazon's intranet! I then took my interests to The
+            team&apos;s page on Amazon&apos;s intranet! I then took my interests to The
             Odin Project.
           </Text>
         </TabPanel>
@@ -61,18 +61,18 @@ const ExperienceTabs = () => {
         <TabPanel>
           <Text color="brand.headers">
             My first professional position as a Web Developer started in the
-            Fall of 2021, and it's where I continue to work today. After
+            Fall of 2021, and it&apos;s where I continue to work today. After
             finishing The Odin Project I thought I knew a lot about web
             deveopment, but being part of a professional team quickly taught me
-            that I would never stop learning. I've learned and grown in this
+            that I would never stop learning. I&apos;ve learned and grown in this
             role more than I thought I could and to look at my work now compared
             to when I first started is a humbling experience. While at SockClub
-            I've worked on our Rails monolith, helping to design internal
+            I&apos;ve worked on our Rails monolith, helping to design internal
             e-commerce systems, and also worked on migrating away from a
-            monolith towards a Rails API and NextJS front-end. I've also helped
+            monolith towards a Rails API and NextJS front-end. I&apos;ve also helped
             design entirely new solutions and helped refine our client-facing
-            processes to make them both scalable and easy to use. I've worked on
-            features ranging from back-end, to front-end, to full-stack and I'm
+            processes to make them both scalable and easy to use. I&apos;ve worked on
+            features ranging from back-end, to front-end, to full-stack and I&apos;m
             excited to see where my learning takes me!
           </Text>
         </TabPanel>
