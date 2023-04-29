@@ -10,7 +10,7 @@ const Experience = ({ mobile }: ComponentUniversal) => {
       <Flex width="50%" direction="column" justify="center">
         <div id="experience">
           <Text color="brand.bodyText" fontSize="2em" mb={4} width="100%">
-            Experience
+            What I&apos;ve Been Up To
           </Text>
         </div>
 
