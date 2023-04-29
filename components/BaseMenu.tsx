@@ -15,7 +15,7 @@ const BaseMenu = () => {
       <Link href="#aboutMe">
         <Text className={styles["navbar-item"]}>About Me</Text>
       </Link>
-      <Link href="#">
+      <Link href="#experience">
         <Text className={styles["navbar-item"]}>Experience</Text>
       </Link>
       <Link href="#">
