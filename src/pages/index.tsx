@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Footer from '../../components/Footer';
 import About from "../../components/About";
+import Experience from "../../components/Experience";
 
 export default function Home() {
   const [mobile, setMobile] = useState(false);
@@ -30,10 +31,9 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        {/* {!mobile && <Navbar />}
-        {mobile && <Logo mobile={mobile} />} */}
         <Box h="100vh" bg="brand.mainBg" style={{ overflow: "scroll" }}>
           <About mobile={mobile} />
+          <Experience />
         </Box>
         {mobile && (
 
