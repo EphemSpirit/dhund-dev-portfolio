@@ -1,11 +1,7 @@
 import { Divider, Flex, Text, Spacer, ScaleFade } from "@chakra-ui/react";
-import styles from "./About.module.css";
+import { ComponentUniversal } from "../typiings";
 
-interface ComponentProps {
-  mobile: boolean;
-}
-
-const About = ({ mobile }: ComponentProps) => {
+const About = ({ mobile }: ComponentUniversal) => {
   return (
     <ScaleFade initialScale={0.9} in={true}>
       <Flex w="100%" justify="center" mt={24}>
