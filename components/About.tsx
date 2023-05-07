@@ -1,10 +1,14 @@
+import { useRef } from 'react';
 import { Divider, Flex, Text, Spacer, ScaleFade } from "@chakra-ui/react";
+import { useInView } from "framer-motion";
 import { ComponentUniversal } from "../typiings";
 
 const About = ({ mobile }: ComponentUniversal) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
   return (
-    <ScaleFade initialScale={0.9} in={true}>
-      <Flex w="100%" justify="center" mt={24}>
+    <ScaleFade initialScale={0.9} in={isInView}>
+      <Flex w="100%" justify="center" mt={24} ref={ref}>
         <Flex w="50%" direction="column" justify="center" mb={36}>
           <div id="aboutMe">
             <Text color="brand.bodyText" fontSize="2em" mb={4} w="100%">

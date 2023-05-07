@@ -2,6 +2,7 @@ import { Project } from "../../typiings";
 
 export const ProjectItems: Project[] = [
   {
+    id: 1,
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 1",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -23,6 +24,7 @@ export const ProjectItems: Project[] = [
     techs: ["NextJS", "TailwindCSS"],
   },
   {
+    id: 2,
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 2",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -44,6 +46,7 @@ export const ProjectItems: Project[] = [
     techs: ["NextJS", "TailwindCSS"],
   },
   {
+    id: 3,
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 3",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -65,6 +68,7 @@ export const ProjectItems: Project[] = [
     techs: ["NextJS", "TailwindCSS"],
   },
   {
+    id: 4,
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 4",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.

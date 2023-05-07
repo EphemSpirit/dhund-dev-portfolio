@@ -3,6 +3,7 @@ export interface ComponentUniversal {
 }
 
 export interface Project {
+    id: number;
     image_url: string;
     title: string;
     short_description: string;
