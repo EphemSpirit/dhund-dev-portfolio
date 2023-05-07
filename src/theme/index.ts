@@ -2,8 +2,8 @@ import { extendTheme, ThemeConfig, theme as base } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
-  useSystemColorMode: false
-}
+  useSystemColorMode: false,
+};
 
 export const theme = extendTheme({
   ...config,
@@ -15,10 +15,10 @@ export const theme = extendTheme({
       headers: "#DEC102",
       subtitles: "#C5D1EB",
       subBodyText: "#f9850b",
-    }
+    },
   },
   fonts: {
     heading: `Roboto Mono, ${base.fonts?.heading}`,
-    body: `Raleway, ${base.fonts?.body}`
-  }
-})
+    body: `Raleway, ${base.fonts?.body}`,
+  },
+});

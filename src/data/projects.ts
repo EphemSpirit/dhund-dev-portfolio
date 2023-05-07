@@ -3,6 +3,7 @@ import { Project } from "../../typiings";
 export const ProjectItems: Project[] = [
   {
     id: 1,
+    slug: "",
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 1",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -25,6 +26,7 @@ export const ProjectItems: Project[] = [
   },
   {
     id: 2,
+    slug: "",
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 2",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -47,6 +49,7 @@ export const ProjectItems: Project[] = [
   },
   {
     id: 3,
+    slug: "",
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 3",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -69,6 +72,7 @@ export const ProjectItems: Project[] = [
   },
   {
     id: 4,
+    slug: "",
     image_url: "/assets/spaghetti_monster.jpg",
     title: "Project 4",
     short_description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.

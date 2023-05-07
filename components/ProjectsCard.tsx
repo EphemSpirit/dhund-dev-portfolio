@@ -7,7 +7,7 @@ import {
   Heading,
   Card,
   CardBody,
-  Flex,
+  Box,
   ScaleFade,
   Button,
 } from "@chakra-ui/react";
@@ -22,7 +22,7 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
 
   return (
     <ScaleFade initialScale={0.9} in={isInView} whileHover={{ scale: 1.1 }}>
-      <Card ref={ref} bg="#676757" border="1px" boxShadow='dark-lg'>
+      <Card ref={ref} bg="#676757" border="1px" boxShadow="dark-lg">
         <CardBody>
           <Image
             src={project.image_url}
@@ -30,9 +30,15 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
             height={200}
             alt="project thumbnail"
           />
-          <Heading size="md">{project.title}</Heading>
-          <Text>{project.short_description}</Text>
-          <Button>View Project</Button>
+          <Heading size="md" color="brand.subBodyText" my={4}>
+            {project.title}
+          </Heading>
+          <Text mb={2} color="brand.headers">
+            {project.short_description}
+          </Text>
+          <Button bg="brand.bodyText" color="brand.subtitles" width="100%" _hover={{ bg: "#e4030e" }}>
+            View Project
+          </Button>
         </CardBody>
       </Card>
     </ScaleFade>
