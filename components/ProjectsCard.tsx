@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Link from "next/link";
 import { useInView } from "framer-motion";
 import { Project } from "../typiings";
 import Image from "next/image";
@@ -36,9 +37,16 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
           <Text mb={2} color="brand.headers">
             {project.short_description}
           </Text>
-          <Button bg="brand.bodyText" color="brand.subtitles" width="100%" _hover={{ bg: "#e4030e" }}>
-            View Project
-          </Button>
+          <Link href={`${project.slug}`}>
+            <Button
+              bg="brand.bodyText"
+              color="brand.subtitles"
+              width="100%"
+              _hover={{ bg: "#e4030e" }}
+            >
+              View Project
+            </Button>
+          </Link>
         </CardBody>
       </Card>
     </ScaleFade>
