@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import Footer from '../../components/Footer';
 import About from "../../components/About";
 import Experience from "../../components/Experience";
+import Projects from "../../components/Projects";
 
 export default function Home() {
   const [mobile, setMobile] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
         <Box h="100vh" bg="brand.mainBg" style={{ overflow: "scroll" }}>
           <About mobile={mobile} />
           <Experience mobile={mobile} />
+          <Projects mobile={mobile} />
         </Box>
         {mobile && (
 
