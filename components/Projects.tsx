@@ -8,7 +8,7 @@ const Projects = ({ mobile }: ComponentUniversal) => {
   return (
     <Flex width="100%" justify="center" mb={12}>
       <Flex width="75%" direction="column" justify="center">
-        <div id="experience">
+        <div id="myWork">
           <Text color="brand.bodyText" fontSize="2em" mb={4} width="100%" align='center'>
             Projects
           </Text>
