@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import { useInView } from "framer-motion";
 import { Project } from "../typiings";
@@ -18,8 +18,22 @@ interface ProjectCardProps {
 }
 
 const ProjectsCard = ({ project }: ProjectCardProps) => {
+  const [mobile, setMobile] = useState(false)
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+
+  useEffect(() => {
+    const updateMobile = () => {
+      setMobile(window.innerWidth < 768 ? true : false);
+    };
+
+    updateMobile();
+    window.addEventListener("resize", updateMobile);
+
+    return () => {
+      window.removeEventListener("resize", updateMobile);
+    };
+  });
 
   return (
     <ScaleFade initialScale={0.9} in={isInView} whileHover={{ scale: 1.1 }}>
@@ -44,6 +58,7 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
               color="brand.subtitles"
               width="100%"
               _hover={{ bg: "#e4030e" }}
+              sx={{ marginTop: `${mobile ? '45px' : '0'}` }}
             >
               View Project
             </Button>

@@ -14,6 +14,10 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const ProjectShow = () => {
   const [mobile, setMobile] = useState(false);
@@ -36,6 +40,7 @@ const ProjectShow = () => {
   )[0];
 
   const imgWidth = mobile ? 300 : 600;
+
   return (
     <>
       <Navbar />
@@ -47,16 +52,31 @@ const ProjectShow = () => {
       >
         <Flex alignItems="center" justifyContent="center">
           <GridItem>
-            <ScaleFade initialScale={0.9} in={true} whileHover={{ scale: 1.1 }}>
-              <Box boxShadow="dark-lg" borderRadius="md">
-                <Image
-                  src={project?.image_url}
-                  height={200}
-                  width={imgWidth}
-                  alt="Project Image"
-                />
-              </Box>
-            </ScaleFade>
+            <Box
+              boxShadow="dark-lg"
+              borderRadius="md"
+              sx={{
+                height: "500px",
+                width: "400px",
+                position: `${mobile ? "" : "absolute"}`,
+                top: "225",
+                left: "200",
+              }}
+            >
+              <Swiper navigation={true} modules={[Navigation]}>
+                {project?.image_urls.map((img) => (
+                  <SwiperSlide>
+                    <Image
+                      src={img}
+                      height={100}
+                      width={200}
+                      alt="Project Image"
+                      style={{ height: "500px", width: "400px" }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Box>
           </GridItem>
         </Flex>
 
@@ -72,9 +92,11 @@ const ProjectShow = () => {
                 <Heading color="brand.subBodyText" mb={8}>
                   {project?.title}
                 </Heading>
-                <Text mb={8} color="brand.headers">
-                  {project?.description}
-                </Text>
+                {project?.description.map((paragraph: string) => (
+                  <Text mb={4} color="brand.headers">
+                    {paragraph}
+                  </Text>
+                ))}
                 <Text color="brand.headers" sx={{ fontStyle: "italic" }} mb={8}>
                   Technologies used: {project?.techs.join(", ")}
                 </Text>

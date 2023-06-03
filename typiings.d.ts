@@ -8,6 +8,6 @@ export interface Project {
     slug: string;
     title: string;
     short_description: string;
-    description: string;
+    description: string[];
     techs: string[];
 }
