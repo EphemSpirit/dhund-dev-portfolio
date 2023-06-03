@@ -23,13 +23,14 @@ const ProjectsCard = ({ project }: ProjectCardProps) => {
 
   return (
     <ScaleFade initialScale={0.9} in={isInView} whileHover={{ scale: 1.1 }}>
-      <Card ref={ref} bg="#676757" border="1px" boxShadow="dark-lg">
+      <Card ref={ref} bg="#676757" border="1px" boxShadow="dark-lg" sx={{ height: '500px' }}>
         <CardBody>
           <Image
-            src={project.image_url}
+            src={project.image_urls[0]}
             width={300}
-            height={200}
+            height={250}
             alt="project thumbnail"
+            style={{ height: '250px' }}
           />
           <Heading size="md" color="brand.subBodyText" my={4}>
             {project.title}
