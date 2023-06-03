@@ -12,13 +12,13 @@ const BaseMenu = () => {
   };
   return (
     <Flex w="30%" justify="space-between">
-      <Link href="#aboutMe">
+      <Link href="/#aboutMe">
         <Text className={styles["navbar-item"]}>About Me</Text>
       </Link>
-      <Link href="#experience">
+      <Link href="/#experience">
         <Text className={styles["navbar-item"]}>Experience</Text>
       </Link>
-      <Link href="#">
+      <Link href="/#myWork">
         <Text className={styles["navbar-item"]}>My Work</Text>
       </Link>
       <Link href="/assets/hund.drew-resume_dev.pdf" target="_blank">

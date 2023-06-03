@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Text, Flex, Spacer } from "@chakra-ui/react";
 import BaseMenu from "./BaseMenu";
 import Link from "next/link";
+import Image from 'next/image';
 import styles from "../src/styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -33,7 +34,8 @@ const Navbar = () => {
         className={styles["navbar-item"]}
         fontSize="3xl"
       >
-        <Link href="/">DH</Link>
+        {/* <Link href="/"><Image src="/assets/DrewLogoTemplate1.jpg" height={70} width={70} alt="site logo" /></Link> */}
+        <Link href='/'>DH</Link>
       </Text>
       {!mobile && (
         <>
