@@ -64,8 +64,8 @@ const ProjectShow = () => {
               }}
             >
               <Swiper navigation={true} modules={[Navigation]}>
-                {project?.image_urls.map((img) => (
-                  <SwiperSlide>
+                {project?.image_urls.map((img, i) => (
+                  <SwiperSlide key={i}>
                     <Image
                       src={img}
                       height={100}
@@ -92,8 +92,8 @@ const ProjectShow = () => {
                 <Heading color="brand.subBodyText" mb={8}>
                   {project?.title}
                 </Heading>
-                {project?.description.map((paragraph: string) => (
-                  <Text mb={4} color="brand.headers">
+                {project?.description.map((paragraph: string, i) => (
+                  <Text mb={4} color="brand.headers" key={i}>
                     {paragraph}
                   </Text>
                 ))}
