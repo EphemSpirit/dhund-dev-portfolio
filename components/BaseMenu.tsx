@@ -11,7 +11,7 @@ const BaseMenu = () => {
     window.open('../src/assets/hund.drew-resume_dev.pdf')
   };
   return (
-    <Flex w="30%" justify="space-between">
+    <Flex w="35%" justify="space-between">
       <Link href="/#aboutMe">
         <Text className={styles["navbar-item"]}>About Me</Text>
       </Link>
@@ -22,8 +22,13 @@ const BaseMenu = () => {
         <Text className={styles["navbar-item"]}>My Work</Text>
       </Link>
       <Link href="/assets/hund.drew-resume_dev.pdf" target="_blank">
-        <Text mr={8} className={styles["navbar-item"]}>
+        <Text className={styles["navbar-item"]}>
           Resume
+        </Text>
+      </Link>
+      <Link href="/#contact">
+        <Text mr={8} className={styles["navbar-item"]}>
+          Contact
         </Text>
       </Link>
       <Text color="brand.headers">
