@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { ComponentUniversal } from "../typiings";
 import { Text, Grid, GridItem, Flex, Divider } from "@chakra-ui/react";
 import { ProjectItems } from "@/data/projects";

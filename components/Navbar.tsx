@@ -34,7 +34,6 @@ const Navbar = () => {
         className={styles["navbar-item"]}
         fontSize="3xl"
       >
-        {/* <Link href="/"><Image src="/assets/DrewLogoTemplate1.jpg" height={70} width={70} alt="site logo" /></Link> */}
         <Link href='/'>DH</Link>
       </Text>
       {!mobile && (
